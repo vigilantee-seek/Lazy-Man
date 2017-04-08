@@ -77,6 +77,25 @@ nav li{
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+@media all and (max-width: 800px) {
+    nav{
+        background-color: white;
+        color: rgba(0,0,0,.7);
+
+        -webkit-box-shadow: 5px 5px 5px -5px rgba(0,0,0,.6),-5px 5px 5px -5px rgba(0,0,0,.6);
+        -moz-box-shadow: 5px 5px 5px -5px rgba(0,0,0,.6),-5px 5px 5px -5px rgba(0,0,0,.6);
+        box-shadow: 5px 5px 5px -5px rgba(0,0,0,.6),-5px 5px 5px -5px rgba(0,0,0,.6);
+    }
+    nav > div.logo{
+        width: 100%;
+    }
+    nav li{
+        width: 100%;
+    }
+    nav ul{
+        display: none;
+    }
+}
 
 
 nav > div.logo{
@@ -220,6 +239,7 @@ li[data-ul="true"] > ul > li:hover{
     background-color: white;
     width: 100%;
     height: 100vh;
+    margin: 0;
 }
 .panel h2{
     text-align: center;
@@ -271,6 +291,7 @@ div.hello p{
 
 
 .self-introduction > h2{
+    padding-top: 1rem;
     opacity: 0;
     transition: opacity 1s;
 }
@@ -324,6 +345,33 @@ div.hello p{
     box-shadow: 0 0 2px #aaa;
 
     transition: box-shadow .5s , opacity .75s ease-in , transform 1s ease-in;
+}
+
+@media all and ( max-width: 800px) {
+    .self-introduction > div.exp-intro > div {
+        width: 100%;
+    }
+    .panel[data-order='2']{
+        height: auto;
+    }
+    .panel[data-order='2'] div.sub-panel{
+        position: relative;
+        top: 0;left: 0;
+        transform: none;
+    }
+    .panel[data-order='2'] h2{
+        padding-top: 2rem;
+    }
+    .panel[data-order='2'] .belief{
+        margin-bottom: 0;
+    }
+    .panel[data-order='2'] .text-belief{
+        width: 100%;
+        margin: 1em auto;
+    }
+    .panel[data-order='2'] .text-belief:before{
+        display: none;
+    }
 }
 .self-introduction > div.exp-intro > div:nth-child(1){
     transform: translateX(-25%);
@@ -584,6 +632,11 @@ div.container{
     width: 29%;
     margin: 2em 2%;
 }
+@media all and (max-width: 800px) {
+    .contact-panel > div{
+        width: 100%;
+    }
+}
 .contact-panel h3{
     font-family: inherit;
     font-size: 1.2rem;
@@ -654,4 +707,13 @@ div.container{
     margin-top: 2rem;
     opacity: .8;
     font-size: 1.4rem;
+}
+
+@media all and (max-width: 800px) {
+    #mail {
+        padding-left: .3rem;
+        margin-top: 2rem;
+        opacity: .8;
+        font-size: 1.4rem;
+    }
 }

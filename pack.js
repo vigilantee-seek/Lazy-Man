@@ -75,6 +75,16 @@ $(function(){
 
     $('#mask').css("margin-bottom",$('footer').height() + "px");
 
+    $('nav .logo').click(function(){
+        var ul_ds = $('nav ul');
+        if(ul_ds.css("display")=="none"){
+            ul_ds.slideDown();
+        }
+        else{
+            ul_ds.slideUp();
+        }
+    });
+
 
 
     var slider_children_music = $("div[data-theme='music'] div.slider-children");
