@@ -619,6 +619,12 @@ div.exposition > p.active{
     display: block;
 }
 
+@media all and (max-width: 800px) {
+    div.exposition > p{
+        max-width: 90%;
+    }
+}
+
 
 /************
 *****end*****
