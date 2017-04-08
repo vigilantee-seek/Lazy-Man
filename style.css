@@ -152,7 +152,7 @@ nav.nav-active div.right-part > ul > li > a:hover{
     nav > div.logo{
         width: 100%;
         padding: .8em;
-        font-size: 1.3rem;
+        font-size: 1.6rem;
     }
     nav.nav-active > div.logo{
         color: rgba(0,0,0,.8);
@@ -166,9 +166,13 @@ nav.nav-active div.right-part > ul > li > a:hover{
     }
     nav ul{
         display: none;
+        width: 100%;
+        float: left;
     }
-    div.right-part{
-        font-size: .6rem;
+    nav > div.right-part{
+        width: 100%;
+        float: left;
+        font-size: 1rem;
     }
     div.right-part > ul > li > a{
         margin: .7em;
