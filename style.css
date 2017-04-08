@@ -27,6 +27,7 @@ body{
     background-color: white;
     width: 100%;
     position: relative;
+    z-index: 0;
 }
 
 ::-webkit-scrollbar
@@ -650,6 +651,9 @@ footer{
     bottom: 0;
     background-color: rgba(0,0,0,.76);
 }
+footer *{
+    z-index: -1;
+}
 
 div.container{
     position: relative;
@@ -663,9 +667,9 @@ div.container{
     margin: 2em 2%;
 }
 #mask{
-    width: 0;
-    height: 0;
-    z-index: -2;
+    width: 100%;
+    position: relative;
+    z-index: -99;
 }
 @media all and (max-width: 800px) {
     .contact-panel > div{

@@ -73,7 +73,7 @@ $(function(){
     });
 
 
-    $('#mask').css("margin-bottom",$('footer').height() + "px");
+    $("#mask").css("height",$('footer').height() + "px");
 
     $('nav .logo').click(function(){
         var ul_ds = $('nav ul');
