@@ -323,6 +323,11 @@ div.hello p{
     width: 70vw;
     margin: 1.5em auto;
 }
+@media all and (max-width:950px){
+    .self-introduction > div{
+        width: 80vw;
+    }
+}
 .self-introduction p{
     text-align: center;
     font-size: 1.1rem;
