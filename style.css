@@ -79,24 +79,6 @@ nav li{
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-@media all and (max-width: 800px) {
-    nav{
-        -webkit-box-shadow: 5px 5px 5px -5px rgba(0,0,0,.6),-5px 5px 5px -5px rgba(0,0,0,.6);
-        -moz-box-shadow: 5px 5px 5px -5px rgba(0,0,0,.6),-5px 5px 5px -5px rgba(0,0,0,.6);
-        box-shadow: 5px 5px 5px -5px rgba(0,0,0,.6),-5px 5px 5px -5px rgba(0,0,0,.6);
-    }
-    nav > div.logo{
-        width: 100%;
-    }
-    nav li{
-        width: 100%;
-    }
-    nav ul{
-        display: none;
-    }
-}
-
-
 nav > div.logo{
     display: inline-block;
     padding: 1em;
@@ -146,7 +128,6 @@ div.right-part > ul >  li > a:after{
     transition: all .2s ease-in-out;
 }
 div.right-part > ul > li > a:hover:after,
-div.right-part > ul > li > a:active:after,
 div.right-part > ul > li > a.active:after{
     left: 0;
     width: 100%;
@@ -161,6 +142,37 @@ nav.nav-active div.right-part > ul > li > a:hover{
     color: rgba(0,0,0,1);
 }
 
+@media all and (max-width: 800px) {
+    nav{
+        -webkit-box-shadow: 5px 5px 5px -5px rgba(0,0,0,.6),-5px 5px 5px -5px rgba(0,0,0,.6);
+        -moz-box-shadow: 5px 5px 5px -5px rgba(0,0,0,.6),-5px 5px 5px -5px rgba(0,0,0,.6);
+        box-shadow: 5px 5px 5px -5px rgba(0,0,0,.6),-5px 5px 5px -5px rgba(0,0,0,.6);
+    }
+    nav > div.logo{
+        width: 100%;
+        padding: .8em;
+        font-size: 1.7rem;
+    }
+    nav.nav-active > div.logo{
+        color: rgba(0,0,0,.8);
+    }
+    nav.nav-active li{
+        color: rgba(0,0,0,.6);
+        border-top: 1px solid linen;
+    }
+    nav li{
+        width: 100%;
+    }
+    nav ul{
+        display: none;
+    }
+    div.right-part{
+        font-size: 1.1rem;
+    }
+    div.right-part > ul > li > a{
+        margin: .7em;
+    }
+}
 
 li[data-ul="true"] > ul{
     position: absolute;
@@ -540,6 +552,14 @@ div.slider{
     height: 50vh;
     margin: auto 1%;
     overflow: hidden;
+}
+
+@media all and (max-width: 800px) {
+    div.slider,
+    div.prev,
+    div.next{
+        height: 40vh;
+    }
 }
 
 .slider-children{
