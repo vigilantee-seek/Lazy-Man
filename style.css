@@ -450,6 +450,22 @@ div.ico-part[data-order="3"]{
     margin: 2em auto;
     width: 70%;
 }
+@media all and ( max-width: 1400px){
+    .gallery{
+        width: 80%;
+    }
+}
+@media all and (max-width: 1200px) {
+    .gallery {
+        width: 90%;
+    }
+}
+@media all and (max-width: 1070px) {
+    .gallery{
+        width: 100%;
+    }
+}
+
 .gallery > div{
     display: inline-block;
     vertical-align: middle;
@@ -464,7 +480,10 @@ div.next{
 
     cursor: pointer;
     background-image: url("image/back.png");
+
+    z-index: 20;
 }
+
 div.next{
     transform: rotateZ(180deg);
 }
@@ -496,6 +515,29 @@ div.slider{
     position: relative;
     top: 50%;left: 50%;
     transform: translate(-50%,-50%);
+}
+@media all and (max-width: 970px){
+    div.prev,
+    div.next{
+        width: 6%;
+    }
+    div.slider{
+        width: 85%;margin: auto;
+    }
+}
+@media all and (max-width: 800px){
+    div.prev,
+    div.next{
+        opacity: .8;
+    }
+    div.slider img{
+        width: 100%;
+    }
+}
+@media all and ( max-width: 650px) {
+    div.slider img{
+        width: 80%;
+    }
 }
 
 div.exposition > p{

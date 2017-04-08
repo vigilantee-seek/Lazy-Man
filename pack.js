@@ -39,6 +39,9 @@ $(function(){
         if( $(document).scrollTop() >= ($("div.panel[data-order='4']").offset().top + $('footer').height() - 20) ){
             $('#mail').addClass("active")
         }
+        else{
+            $('#mail').removeClass("active")
+        }
 
     });
 
@@ -156,3 +159,4 @@ $(function(){
     });
 
 });
+
