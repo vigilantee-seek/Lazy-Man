@@ -5,4 +5,4 @@ I am an interesting Chinese man.
 Running is my favorite sport.
 I like talking with people. I can learn much from them.
 
-Welcome to you, my friends!
+Welcome, my friends!
