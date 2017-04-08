@@ -151,7 +151,7 @@ nav.nav-active div.right-part > ul > li > a:hover{
     nav > div.logo{
         width: 100%;
         padding: .8em;
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
     nav.nav-active > div.logo{
         color: rgba(0,0,0,.8);
@@ -167,7 +167,7 @@ nav.nav-active div.right-part > ul > li > a:hover{
         display: none;
     }
     div.right-part{
-        font-size: 1.1rem;
+        font-size: .6rem;
     }
     div.right-part > ul > li > a{
         margin: .7em;
