@@ -81,9 +81,6 @@ nav li{
 }
 @media all and (max-width: 800px) {
     nav{
-        background-color: white;
-        color: rgba(0,0,0,.7);
-
         -webkit-box-shadow: 5px 5px 5px -5px rgba(0,0,0,.6),-5px 5px 5px -5px rgba(0,0,0,.6);
         -moz-box-shadow: 5px 5px 5px -5px rgba(0,0,0,.6),-5px 5px 5px -5px rgba(0,0,0,.6);
         box-shadow: 5px 5px 5px -5px rgba(0,0,0,.6),-5px 5px 5px -5px rgba(0,0,0,.6);
@@ -637,6 +634,14 @@ div.container{
 @media all and (max-width: 800px) {
     .contact-panel > div{
         width: 100%;
+    }
+    footer{
+        position: relative;
+        z-index: 1;
+        bottom: auto;
+    }
+    #mask{
+        display: none;
     }
 }
 .contact-panel h3{
