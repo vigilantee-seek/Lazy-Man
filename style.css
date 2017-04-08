@@ -662,6 +662,11 @@ div.container{
     width: 29%;
     margin: 2em 2%;
 }
+#mask{
+    width: 0;
+    height: 0;
+    z-index: -2;
+}
 @media all and (max-width: 800px) {
     .contact-panel > div{
         width: 100%;
