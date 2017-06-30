@@ -137,7 +137,7 @@ nav li:hover{
 
 
 #home{
-    background: darkslateblue;
+    background-color: darkslateblue;
 
     color: hsla(0,0%,100%,.8);
     text-align: center;
@@ -148,14 +148,14 @@ nav li:hover{
     cursor: default;
 
     transform: translateX(0);
-    transition: .4s ease-in-out all;
+    transition: .4s ease-in-out background-color;
     transition-delay: 0;  
 }
 #home p{
     transition: .4s ease-in-out all;
 }
 #home.bgEffects{
-    background: rgba(0,0,0,.9);
+    background-color: rgba(0,0,0,.9);
 }
 #home.bgEffects p{
     filter: blur(3px);
