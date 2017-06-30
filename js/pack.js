@@ -13,6 +13,13 @@
         var idSelector = "#" + words[words.length - 1];
         console.log(idSelector);
         $(this).click(function(){
+            if(className != "icon-home"){
+                $(this).css("font-size","2.5rem");
+                $(this).siblings().css("font-size","1.7rem");
+            } else{
+                 $(this).css("font-size","2.2rem");
+                 $(this).siblings().css("font-size","2.2rem");
+            }         
             $(idSelector).siblings().removeClass("delay");
             $(idSelector).siblings().removeClass("active");
             if(idSelector != "#home"){
